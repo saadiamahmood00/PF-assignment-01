@@ -1,0 +1,183 @@
+Q1
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	//below program calculates the percentage
+	Double P;
+	Scanner read= new Scanner(System.in);
+	Double SOM,MM;
+	//SOM=sum of obtained marks
+	//MM=maximum marks
+	System.out.println("enter the sum of ibtained marks");
+	SOM= read.nextDouble();
+	System.out.println("enter maximmum marks");
+	MM=read.nextDouble();
+	P=SOM/MM*100;
+	System.out.println("percentage ="+ P+"%");
+
+		
+	}
+}
+
+Q2
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	//below program calculates the area and circumference of circle
+	Double R;
+	Double A,C;
+	Scanner read= new Scanner(System.in);
+	System.out.println("enter the value of radius of the circle");
+	R=read.nextDouble();
+	A=3.14*R*R;
+	System.out.println("Area of the circle is="+ A+"m^2");
+	C=2*3.14*R;
+	System.out.println("Circumference of the circle is"+ C+"m");
+	
+
+		
+	}
+}
+Q3
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	//below program calculates the discounted selling price
+	Double dsp;
+	Scanner read= new Scanner(System.in);
+	Double csp,dis,dp;
+	System.out.println("enter the current selling price");
+	csp=read.nextDouble();
+	System.out.println("enter the discount percentage");
+	dp=read.nextDouble();
+	dis=dp*csp/100;
+	dsp=csp-dis;
+	System.out.println("the discounted selling price is Rs"+ dsp);
+
+		
+	}
+}
+
+Q4
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	/*below program calculates the current selling price when discount selling price and 
+	discount percentage is entered by user*/
+	Double dsp;
+	Scanner read= new Scanner(System.in);
+	Double csp,dis,dp;
+	System.out.println("enter the discount selling price");
+	dsp=read.nextDouble();
+	System.out.println("enter the discount percentage");
+	dp=read.nextDouble();
+	
+	csp=dsp/(1-dp/100);
+	System.out.println("the current selling price is Rs"+ csp);
+
+		
+	}
+}
+
+Q5
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	/*below program calculates the power when voltage and current are inputted*/
+	Double P;
+	Scanner ki= new Scanner(System.in);
+	Double V,I;
+	System.out.println("enter the value of voltage");
+	V=ki.nextDouble();
+	System.out.println("enter the value of current");
+	I=ki.nextDouble();
+	P=V*I;
+	System.out.println("power ="+P+"W");
+
+		
+	}
+}
+
+
+
+
+Q6
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	/*below program calculates the area of trapezium when the lengths of parallel sides and height
+	are inputted*/
+	Double a,b,h,k;
+	Scanner ki= new Scanner(System.in);
+	System.out.println("enter length no.1 and length no.2 of parallel sides");
+	a=ki.nextDouble();
+	b=ki.nextDouble();
+	System.out.println("enter the height of trapezium");
+	h=ki.nextDouble();
+	k= h * (a + b)/2;
+	System.out.println("the area of trapezium is"+k+" m^2");
+
+		
+	}
+}
+
+Q7
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	//below program determines wheater the inputted number is even or odd number.
+	int num;
+	Scanner ki= new Scanner(System.in);
+	System.out.println("Enter your number");
+	num=ki.nextInt();
+	if(num%2==0)
+	{
+	    System.out.println("even number");
+	}
+	else 
+	{
+	    System.out.println("odd number");
+	}
+	}
+}
+
+Q8
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	//below program calculate the area of triangle using heron's formula.
+	Double a,b,c,A,s,d;
+	Scanner ki= new Scanner(System.in);
+	System.out.println("enter the length no.1 of the three sides of triangle");
+	a=ki.nextDouble();
+	System.out.println("enter the length no.2 of the three sides of triangle");
+	b=ki.nextDouble();
+	System.out.println("enter the length no.3 of the three sides of triangle");
+	c=ki.nextDouble();
+	s=(a+b+c)/2;
+	System.out.println("semi perameter is"+s+"m");
+	A= Math.sqrt((s-a)*(s-b)*(s-c));
+	System.out.println("the area of trapezium is"+A+" m^2");
+	
+}
+}
